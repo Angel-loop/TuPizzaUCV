@@ -1,0 +1,76 @@
+/**********/
+/* Resets */
+/**********/
+
+li{
+    list-style-type: none;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  /* resetea los margenes */
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p {
+    margin: 0; 
+  }
+  
+  /* resetea el peso de las etiquetas */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    font-weight: 400;
+  }
+  
+
+  body {
+
+    
+    line-height: 1.5rem;
+    min-height: 100vh;
+  
+  }
+  
+  /* hace que sea mas facil trabajar con las imagenes */
+  img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/**********/
+/* Custom */
+/**********/
+
+.navBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 1.5rem;   
+}
+
+.logo{
+    margin-right: auto;
+}
+
+#hero{
+    height: 31.25rem;
+    background-image: url(./images/heroImage);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
