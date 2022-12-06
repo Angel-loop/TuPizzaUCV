@@ -269,6 +269,7 @@ input{
   padding: 2rem;
   color: white;
   gap: 1rem;
+  border: solid 1px white;
 }
 .seleccion > h3{
   padding-bottom: 1rem;
