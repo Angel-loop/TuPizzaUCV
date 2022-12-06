@@ -1,0 +1,385 @@
+
+/**********/
+/* Resets */
+/**********/
+  ul{
+    padding: 0;
+    border: 0;
+  }
+
+  a,
+  a:visited{
+    text-decoration: none;
+    color: initial;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  /* resetea los margenes */
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p {
+    margin: 0; 
+  }
+  
+  /* resetea el peso de las etiquetas */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    font-weight: 400;
+  }
+  
+
+  body {
+    line-height: 1.5rem;
+    min-height: 100vh;
+    background-color: #ffffff;
+    font-size: 1.5em;
+    background-image: url(../images/wood.jfif);
+    background-size: cover;
+  
+  }
+  
+  /* hace que sea mas facil trabajar con las imagenes */
+  img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/**********/
+/* Custom */
+/**********/
+
+.navBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1.5rem;   
+}
+
+.logo{
+    margin-right: auto;
+    width: 5rem;
+}
+
+.login{
+  border: solid 1px white;
+  border-radius: 5px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  backdrop-filter: blur(2rem);
+  color: white;
+  transition: all ease-in-out 0.5s;
+}
+
+.login:hover{
+  scale: 110%;
+}
+
+#login{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
+.form{
+  color: white;
+  border-radius: 5%;
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  backdrop-filter: blur(2rem);  
+
+}
+
+.form-element{
+  width: 100%;  
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  
+}
+
+
+
+.home-button{
+  color: white;
+}
+
+input{
+  border-radius: 5px;
+  border: none;
+  box-shadow: none;
+  width: 100%;
+  font-size: 18px;
+  padding: .5rem; 
+  color: #8a8b8e;
+}
+
+#input-title{
+  font-size: 40px;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+#input-btn{
+  width: 100%;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  background-color:hsl(201, 74%, 56%);
+  cursor: pointer;
+  transition: all ease-in-out 150ms;
+}
+
+#input-btn:hover{
+  background-color:	#3cc7ff; 
+}
+
+.hero{
+    height: 30.875rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 5rem;
+}
+
+#heroHome{
+  background-image: url(../images/hero.jpeg);
+}
+
+#heroTradicional{
+  background-image: url('../images/tradicionalHero.jpg');
+  background-size: cover;
+  align-items: flex-end;
+  padding-bottom: 2rem;
+  box-shadow: inset 0px -35px 65px black;
+}
+
+#heroVegano{
+  background-image: url('../images/veganHero.jpg');
+  background-size: cover;
+  align-items: flex-end;
+  padding-bottom: 3.5rem;
+  box-shadow: inset 0px -35px 65px black;
+}
+
+
+
+.barra{
+  padding: 20px;
+  background: #ab1c24;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: white;
+  font-weight: 700;
+  font-size: .8em;
+  
+}
+.icono {
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 60px;
+  background-size: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.icono1 {
+  background-image: url(../images/icono1.png);
+}
+.icono2 {
+  background-image: url(../images/icono2.png);
+}
+.icono3 {
+  background-image: url(../images/icono3.png);
+}
+
+
+.menu{
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  color: white;
+  backdrop-filter: blur(2rem) ;
+}
+
+.menu-container{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2.5rem;
+  color: white;
+  
+
+}
+
+.menu-seleccion{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 2.5rem;
+}
+
+.seleccion{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  backdrop-filter: blur(2rem);
+  padding: 2rem;
+  color: white;
+  gap: 1rem;
+}
+.seleccion > h3{
+  padding-bottom: 1rem;
+  font-size: 40px;
+}
+
+.seleccion > h4{
+  font-size: 30px;
+}
+
+.seleccion > ul > li{
+  font-size: 18px;
+}
+
+
+.card {
+  color: white;
+  text-align: center;
+  border: 1px solid #e1e1e1;
+  backdrop-filter: blur(2rem);
+  padding: 2rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.card:hover{
+  scale: 110%;
+
+}
+
+.card h4{
+  margin-bottom: 1rem;
+}
+
+.menu-image{
+  width: 21.875rem;
+  height: 290px;
+}
+
+.lista-ingredientes{
+  padding: 1rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  backdrop-filter: blur(2rem);
+  margin-bottom: 3rem;
+}
+
+.lista-ingredientes > h3{
+  align-self: center;
+}
+
+.lista-ingredientes > input{
+  margin-left: auto;
+}
+
+.ingrediente{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 25px;
+  border-bottom: solid 1px #f0f0f0;
+  padding-bottom: .5rem;
+}
+
+.ingrediente > input{
+  width: auto;
+}
+
+.btn-pedido{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+
+}
+
+.btn-pedido > button{
+  color: white;
+  font-size: 25px;
+  background-color:hsl(201, 74%, 56%);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all ease-in-out 150ms;
+}
+
+.btn-pedido > button:hover{
+  background-color:	#3cc7ff;
+}
+
+#checkout{
+  color: white;
+  font-size: 20px;
+  background-color:hsl(201, 74%, 56%);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all ease-in-out 150ms;
+}
+
+#checkout:hover{
+  background-color:	#3cc7ff;
+}

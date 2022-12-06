@@ -4,23 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles/styles.css">
     <title>TuPizzaUCV</title>
 </head>
 <body>
     
     <head>
         <nav class="navBar">
-            <img class="logo" src="" alt="Logo de pizzeria">
-            <div class="login">Login</div>
+            <a href="./index.html" class="logo">
+                <img src="./images/logo.png" alt="Logo de pizzeria">
+            </a>
+            <a href="./pages/login.html"> 
+                <div class="login">Iniciar Sesión</div>
+            </a>
         </nav>
     </head>
 
-    <div class="container">
-        <div id="hero">
-            <p>Slogan</p>
-        </div>
+    <div class="barra"></div>
+
+    <div id="heroHome" class="hero">
+        <p>Amor en cada mordida</p>
     </div>
 
+    <div class="barra">
+        <p class="icono icono1">los mejores <br> precios</p>
+        <p class="icono icono2">Las mejores <br> pizzas de la UCV</p>
+        <p class="icono icono3">La mejor <br> atencion al cliente</p>
+    </div>
+
+    <div class="menu">
+        <h3 >Nuestro Menu</h3>
+    </div>
+
+    <div class="menu-container">
+        <a href="./pages/menu-tradicional.html">
+            <div class="card">
+                <h4>Menu Tradicional</h4>
+                <img src="./images/pizza-tradicional.jpg" class="menu-image">
+            </div>
+        </a>
+
+        <a href="./pages/menu-vegano.html">
+            <div class="card">
+                <h4>Menu Vegano</h4>
+                <img src="./images/pizza-vegana.jpg" class="menu-image">
+            </div>
+        </a>
+    </div>
+    
+    
 </body>
 </html>

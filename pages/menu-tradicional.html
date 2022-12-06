@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>TuPizzaUCV</title>
+</head>
+<body>
+    <head>
+        <nav class="navBar">
+            <a href="../index.html" class="logo">
+                <img src="../images/logo.png" alt="Logo de pizzeria">
+            </a>
+            <a href="./login.html"> 
+                <div class="login">Iniciar Sesión</div>
+            </a>
+        </nav>
+    </head>
+
+    <div class="barra"></div>
+    <div id="heroTradicional" class="hero">
+        <h2>Menu Tradicional</h2>
+    </div>
+    <div class="barra" style="margin-bottom: 5rem;"></div>
+
+        <form action="checkout.html" class="menu-seleccion" id="pizzas">
+
+            <div class="seleccion">
+                <h3>Pizza de Carne</h3>
+                <img src="../images/pizza-carne.jpg" alt="pizza con carne" >
+                <h4>Ingredientes</h4>
+                <ul>
+                    <li>Salsa de Tomate</li>
+                    <li>Queso Mozarella</li>
+                    <li>Queso Parmesano</li>
+                    <li>Carne de Ternera</li>
+                </ul>
+                <input type="radio" name="pizza" id="carne" required="true">
+            </div>
+            
+            <div class="seleccion">
+                <h3>Pizza Hawaiana</h3>
+                <img src="../images/pizza-hawaiana.jpg" alt="pizza hawaiana">
+                <h4>Ingredientes</h4>
+                <ul>
+                    <li>Salsa de Tomate</li>
+                    <li>Piña</li>
+                    <li>Queso Mozzarella</li>
+                    <li>Jamon de Pavo</li>
+                </ul>
+                <input type="radio" name="pizza" id="hawaiana" required="true">
+            </div>
+            
+            <div class="seleccion">
+                <h3>Pizza Margarita</h3>
+                <img src="../images/pizza-margarita.jpg" alt="pizza margarita">
+                <h4>Ingredientes</h4>
+                <ul>
+                    <li>Salsa de Tomate</li>
+                    <li>Queso Mozzarella</li>
+                    <li>Jamon de Pavo</li>
+                    <li>Albahaca</li>
+                </ul>
+                <input type="radio" name="pizza" id="margarita" required="true">
+
+            </div>
+
+            
+            
+        </form>
+
+        <div class="lista-ingredientes">
+            <h3>Ingredientes Adicionales</h3>
+
+            <div class="ingrediente">
+                <label for="queso"> Queso</label>
+                <input type="radio" name="queso">
+            </div>
+
+            <div class="ingrediente">
+                <label for="jamon">Jamon</label>
+                <input type="radio" name="jamon">
+            </div>
+
+            <div class="ingrediente">
+                <label for="cebolla">Cebolla</label>
+                <input type="radio" name="cebolla">
+            </div>
+
+            <div class="ingrediente">
+                <label for="pimenton">Pimenton</label>
+                <input type="radio" name="pimenton">
+            </div>
+
+            <div class="ingrediente">
+                <label for="champiñon">Champiñon</label>
+                <input type="radio" name="champiñon">
+            </div>
+
+            <div class="ingrediente">
+                <label for="anchoas">Anchoas</label>
+                <input type="radio" name="anchoas">
+            </div>
+
+            <div class="ingrediente">
+                <label for="aceitunas">Aceitunas</label>
+                <input type="radio" name="aceitunas">
+            </div>
+
+            <div class="ingrediente">
+                <label for="maiz">Maiz</label>
+                <input type="radio" name="maiz">
+            </div>
+
+            <div class="ingrediente">
+                <label for="tocineta">Tocineta</label>
+                <input type="radio" name="tocineta">
+            </div>
+
+        </div>
+
+        <div class="lista-ingredientes">
+            <h3>Bebidas</h3>
+            <div class="ingrediente">
+                <label for="">Pepsi-Cola</label>
+                <input type="number" min="0" max="9" placeholder="0">
+            </div>
+            <div class="ingrediente">
+                <label for="">Coca-Cola</label>
+                <input type="number" min="0" max="9" placeholder="0">
+            </div>
+            <div class="ingrediente">
+                <label for="">Chinotto</label>
+                <input type="number" min="0" max="9" placeholder="0">
+            </div>
+            <div class="ingrediente">
+                <label for="">Colita</label>
+                <input type="number" min="0" max="9" placeholder="0">
+            </div>
+            <div class="ingrediente">
+                <label for="">Jugo de Manzana</label>
+                <input type="number" min="0" max="9" placeholder="0">
+            </div>
+            <div class="ingrediente">
+                <label for="">Jugo de Naranja</label>
+                <input type="number" min="0" max="9" placeholder="0">
+            </div>
+            <div class="ingrediente">
+                <label for="">Jugo de Durazno</label>
+                <input type="number" min="0" max="9" placeholder="0">
+            </div>
+        </div>
+        
+
+        <div class="btn-pedido">
+            <button type="submit" form="pizzas">Realizar Pedido</button>
+        </div>
+
+</body>
+</html>
